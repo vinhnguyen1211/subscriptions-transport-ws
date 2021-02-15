@@ -554,7 +554,7 @@ export class SubscriptionClient {
   }
 
   private connect() {
-    this.client = new this.wsImpl(this.url, this.wsProtocols, ...this.wsOptionArguments);
+    this.client = new this.wsImpl(this.url, ...this.wsOptionArguments);
 
     this.checkMaxConnectTimeout();
 
